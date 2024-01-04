@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    *{
+        padding: 0px;
+        margin:0px;
+    }
+    .container{
+        width: 200px;
+        height:200px;
+        border: 2px solid black;
+        padding: 50px;
+        position: absolute;
+
+
+
+    }
+    .container:nth-child(1){
+        background-color: red;
+        right: 110px;
+    }
+    .container:nth-child(2){
+        background-color: white;
+        left: 90px;
+        z-index: 10;
+        box-shadow: inset 2px 2px 20px orangered ,2px 2px 20px blue;
+        border-radius: 200px;
+        border-radius: 0px 200px 0px 200px;
+        transform: rotate(45deg);
+    }
+    .container:nth-child(3){
+        background-color: yellow;
+
+    }
+    .container:nth-child(4){
+        background-color: pink;
+    }
+    .parent{
+        background-color: black;
+        width: 45%;
+        margin: auto;
+        height: 80vh;
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 2px 2px 100px white , 2px 2px 100px blue;
+        border-radius: 200px 0px 200px 0px;
+    }
+    .box{
+        
+        background-color: pink;
+        box-shadow: inset 2px 2px 20px orangered ,2px 2px 20px blue;
+        border-radius: 200px;
+        border-radius: 0px 200px 0px 200px;
+        transform: rotate(45deg);
+    }
+  </style>
+</head>
+
+<body>
+<div class="parent">
+  <div class="container"></div>
+  <div class="container">
+    <div class="box"></div>
+  </div>
+  <div class="container"></div>
+  <div class="container"></div>
+</div>
+</body>
+
+</html>
