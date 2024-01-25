@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter the number 1" id="inp1">
+    <input type="text" placeholder="enter the number 2" id="inp2">
+    <select name="" id="select">
+    <option value="">none</option>
+    <option value="+">add</option>
+    <option value="-">minus</option>
+    <option value="*">mul</option>
+    </select> 
+    
+<script>
+  document.getElementById("select").onclick=function(){
+    
+    let a=Number(document.getElementById("inp1").value);
+    let b=Number(document.getElementById("inp2").value);
+    let c=(document.getElementById("select").value);
+
+    if(c=="+"){
+        console.log(a+b);
+    }
+    else if(c=="-"){
+        console.log(a-b);
+    }
+    else if(c=="*"){
+        console.log(a*b);
+    }
+};
+</script>
+    
+</body>
+</html>
