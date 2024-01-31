@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-color{
+            display: flex;
+            margin-top: 10px;
+
+        }
+        .red{
+            padding: 15px;
+            border-radius: 50px;
+            background-color: red;
+            cursor: pointer;
+            border: none;
+        }
+        .yellow{
+            padding: 15px;
+            border-radius: 50px;
+            background-color: yellow;
+            margin-left: 8px;
+            cursor: pointer;
+            border: none;
+        }
+        .green{
+            padding: 15px;
+            border-radius: 50px;
+            background-color: green;
+            margin-left: 8px;
+            cursor: pointer;
+            border: none;
+        }
+        .blue{
+            padding: 15px;
+            border-radius: 50px;
+            background-color: blue;
+            margin-left: 8px;
+            cursor: pointer;
+            border: none;
+        }
+        .black{
+            padding: 15px;
+            border-radius: 50px;
+            background-color: black;
+            margin-left: 8px;
+            cursor: pointer;
+            border: none;
+        }
+        .btn1{
+            background-color: rgb(55, 137, 55);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            border: none;
+            
+        }
+        .sel{
+            width: 300px;
+            height: 35px;
+            border-radius: 10px;
+        }
+
+        body{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+    
+            width: 50%;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 30px;
+            background-color: #eee7e7;
+        }
+        
+        
+
+    </style>
+</head>
+<body  id="cont">
+<div class="container">
+    <h2>Select Your Domain:</h2>
+    <select class="sel" name="" id="select" placeholder="Make a choice">
+        <option value="make">--Make a choice--</option>
+        <option value="reactjs">React Js</option>
+        <option value="django">Django</option>
+        <option value="angular">Angular</option>
+        <option value="aws">AWS</option>
+        </select> 
+        
+        <div class="bg-color">
+            <div class="red" id="red"></div>
+            <div class="yellow" id="yellow"></div>
+            <div class="green" id="green"></div>
+            <div class="blue" id="blue"></div>
+            <div class="black" id="black"></div>
+    </div>
+    <h1 id="h"></h1>
+    <button class="btn1" id="upper">Upper</button>
+    <button class="btn1" id="lower">Lower</button>
+    <button class="btn1" id="plus">+</button>
+    <button class="btn1" id="minus">-</button>
+    <select class="btn1" id="fon">
+        <option id="" value="">None</option>
+        <option value="sans-serif">Sans serif</option>
+        <option value="serif">Serif</option>
+        <option value="SMonospace">SMonospace</option>
+        <option value="Cursive">Cursive</option>
+    </select>
+</div>
+    
+    
+    <script>
+        document.getElementById("select").onclick=function(){
+    
+            let a=(document.getElementById("select").value);
+            if(a=="reactjs"){
+                   document.getElementById("h").innerHTML = "Two years before the Civil War, Django (Jamie Foxx), a slave, finds himself accompanying an unorthodox German bounty hunter named Dr. King Schultz (Christoph Waltz) on a mission to capture the vicious Brittle brothers. Their mission successful, Schultz frees Django, and together they hunt the South's most-wanted criminals. Their travels take them to the infamous plantation of shady Calvin Candie (Leonardo DiCaprio), where Django's long-lost wife (Kerry Washington) is still a slave."
+             }
+             else if(a=="Django"){
+                document.getElementById("h").innerHTML = "Two years before the Civil War, Django (Jamie Foxx), a slave, finds himself accompanying an unorthodox German bounty hunter named Dr. King Schultz (Christoph Waltz) on a mission to capture the vicious Brittle brothers. Their mission successful, Schultz frees Django, and together they hunt the South's most-wanted criminals. Their travels take them to the infamous plantation of shady Calvin Candie (Leonardo DiCaprio), where Django's long-lost wife (Kerry Washington) is still a slave."
+             }
+             else if(a=="angular"){
+                document.getElementById("h").innerHTML = "Two years before the Civil War, Django (Jamie Foxx), a slave, finds himself accompanying an unorthodox German bounty hunter named Dr. King Schultz (Christoph Waltz) on a mission to capture the vicious Brittle brothers. Their mission successful, Schultz frees Django, and together they hunt the South's most-wanted criminals. Their travels take them to the infamous plantation of shady Calvin Candie (Leonardo DiCaprio), where Django's long-lost wife (Kerry Washington) is still a slave."
+             }
+             else if(a=="aws"){
+                document.getElementById("h").innerHTML = "one years before the Civil War, Django (Jamie Foxx), a slave, finds himself accompanying an unorthodox German bounty hunter named Dr. King Schultz (Christoph Waltz) on a mission to capture the vicious Brittle brothers. Their mission successful, Schultz frees Django, and together they hunt the South's most-wanted criminals. Their travels take them to the infamous plantation of shady Calvin Candie (Leonardo DiCaprio), where Django's long-lost wife (Kerry Washington) is still a slave."
+             }
+             else if(a=="make"){
+                document.getElementById("h").innerHTML = "";
+             }
+            }
+            document.getElementById("upper").onclick=function () {
+                document.getElementById("h").style.textTransform="uppercase";
+              };
+              document.getElementById("lower").onclick=function (){
+                document.getElementById("h").style.textTransform="lowercase";
+              };
+              let counter=34;
+              document.getElementById("plus").onclick=function (){
+                counter++;
+                console.log(counter);
+                document.getElementById("h").style.fontSize=counter + "px";
+              };
+              document.getElementById("minus").onclick=function (){
+                counter--;
+                console.log(counter);
+                document.getElementById("h").style.fontSize=counter + "px";
+              };
+              document.getElementById("red").onclick = function(){
+                document.getElementById("cont").style.backgroundColor = "red";
+              };
+              document.getElementById("yellow").onclick = function(){
+                document.getElementById("cont").style.backgroundColor = "yellow";
+              };
+              document.getElementById("green").onclick = function(){
+                document.getElementById("cont").style.backgroundColor = "green";
+              };
+              document.getElementById("blue").onclick = function(){
+                document.getElementById("cont").style.backgroundColor = "blue";
+              };
+              document.getElementById("black").onclick = function(){
+                document.getElementById("cont").style.backgroundColor = "black";
+              };
+              document.getElementById("fon").onclick = function(){
+
+                let p = document.getElementById("fon").value;
+                
+                if(p=="sans-serif"){
+
+                    document.getElementById("h").style.fontFamily = "sans-serif";
+                }
+
+                else if(p=="serif"){
+                    document.getElementById("h").style.fontFamily = "serif";
+                }
+                else if(p=="SMonospace"){
+                    document.getElementById("h").style.fontFamily = "SMonospace";
+                }
+                else if(p=="Cursive"){
+                    document.getElementById("h").style.fontFamily = "Cursive";
+                }
+    
+              };
+
+              
+        
+    </script>
+    
+</body>
+</html>

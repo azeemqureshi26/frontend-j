@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn" id="1">Submit</button>
+    <button class="btn" id="2">Submit</button>
+    <button class="btn" id="3">Submit</button>
+    <button class="btn" id="4">Submit</button>
+    <button class="btn" id="5">Submit</button>
+    <button class="btn" id="6">Submit</button>
+    
+    <script>
+            let a=document.querySelectorAll(".btn");
+            console.log(a);
+            for(let i=0; i<a.length; i++){
+                a[i].onclick=function(e){
+                    console.log(e.target.id);
+                }
+            }
+         
+    </script>
+</body>
+</html>

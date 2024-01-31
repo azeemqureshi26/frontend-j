@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .left{
+            height: 100vh;
+            width: 20%;
+            border: 2ps solid black;
+            background-color: red;
+            position: fixed;
+            font-family: sans-serif;
+        }
+        .logo{
+            text-align: center;
+            text-size: 1px;
+            color: white;
+            padding: 70px;
+        }
+        a{
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+            align-items: center;
+            padding-left: 50px;
+            margin-top: 70px;  
+          
+        }
+        a:hover{
+            color: black;
+            transition: 0.4sec;
+            background-color: white;
+        }
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 80%;
+        }
+        .title{
+            padding: 100px 80px;
+
+        }
+        .title h1 {
+
+            font-size: 70px;
+            font-weight: 300;
+        }
+
+        .title h2 {
+            font-size: 50px;
+            font-weight: 400;
+            margin-top: 30px;
+            color: red;
+            font-family: sans-serif;
+        }
+        .title h3{
+            padding:5px;
+            background-color: red;
+            border-color: black;
+            width: 70px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .images {
+
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px 80px;
+
+        }
+        img {
+
+            width: 48%;
+            margin: 5px;
+
+        }
+        .services {
+
+            margin: 50px 75px;
+        }
+        .services h1 {
+
+            margin: 10px 0px;
+            font-size: 50px;
+        }
+        .services h2{
+            padding:5px;
+            background-color: red;
+            border-color: black;
+            width: 70px;
+            border-radius: 5px;
+        }
+        .services p{
+            text-align: justify;
+            word-spacing: 2px;
+        }
+
+    </style>
+</head>
+<body>
+          <div class="left">
+            <h1 class="logo">COMPANY <br>NAME</h1>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <br>
+                <li><a href="#">Showcase</a></li>
+                <br>
+                <li><a href="#">Services</a></li>
+                <br>
+                <li><a href="#">Designers</a></li>
+                <br>
+                <li><a href="#">Packages</a></li>
+                <br>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <div class="title" id="home">
+        
+                    <h1>Interior Design</h1>
+                    <h2>Showcase.</h2>
+                    <h3></h3>
+        
+                </div>
+        
+                <div class="images" id="showcase">
+                    <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="">
+                    <img src="https://www.w3schools.com/w3images/atrium.jpg"alt="">
+                    <img src="https://www.w3schools.com/w3images/livingroom.jpg" alt="">
+                    <img src="https://www.w3schools.com/w3images/bedroom.jpg" alt="">
+                    <img src="https://www.w3schools.com/w3images/diningroom.jpg" alt="">
+                    <img src="https://www.w3schools.com/w3images/livingroom2.jpg" alt="">
+                </div>
+                <div class="services" id="services">
+                    <h1>Services</h1>
+                    <h2></h2>
+                    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+                    <br> <br>
+                    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+          </div>
+</body>
+</html>
