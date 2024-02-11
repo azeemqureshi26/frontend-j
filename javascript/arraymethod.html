@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arraymethod</title>
+</head>
+<body>
+    <script>
+        //pop
+        //push
+        //shift
+        //unshift
+        // slice(start,end)
+        // splice (indexing,newelement,removingelement)
+        //map
+        //filter
+        //reduce
+        //join
+        //split
+        //flat
+        
+        let a=[110,10,20,30,40,50,80,90,100,200];
+        
+        let v=a.pop();
+        let k=a.shift();
+        a.push(k)
+        a.unshift(v)
+        console.log(a); 
+
+        console.log(a.slice(2,5));
+        a.splice(2,0,"azeem");
+        console.log(a);
+
+        let c= a.map(function(i){
+            //console.log(i);
+            return i*2;
+        })
+        console.log(c);
+
+        let d=a.filter((i)=>{
+            return i<50;
+        })
+        console.log(d);
+
+        let x=a.reduce((x,y)=>x+y)
+        console.log(x);
+
+         //let a="10-20-30-40-50-60";
+        //console.log(a);
+        //console.log(typeof a);
+        //console.log(a.split(","));
+        //let arr=a.split("-");
+        //console.log(arr.join("-"));
+
+        //let a=[10,20,["mohit",[1,2,[true,['a','b',[1],'c','d'],false,true],14,3,4],"rohit","aman"],"anu",]
+        //console.log(a[2][1][2][1][2][0]);
+        //let c=a.flat(5);
+        //console.log(c(8))
+
+        //let a=[10,20,[30,[4,5,6],40,50],60,70,80,[1,2,3,4,5,6]]
+        //console.log(a.flat(2 ));
+
+        let j="azeem qureshi";
+        console.log(j.toLowerCase());
+        console.log(j.toUpperCase());
+        console.log(j.slice(2,4));
+        console.log(j.charAt(3));
+        console.log(j.charCodeAt(8));
+        console.log(j.at(2));
+        console.log(j.replace("mohit","rohit"));
+        console.log(j.repeat(4));
+        let b="5";
+        console.log(b.padEnd(3,"0"));
+        console.log(b.padStart(3,"0"));
+        let num=1000;
+        console.log(num.toString());
+        let p="     azeem   "
+        console.log(p.trim());
+        console.log(p.trimStart());
+        console.log(p.trimEnd());
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

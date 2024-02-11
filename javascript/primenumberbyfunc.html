@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functiontype</title>
+</head>
+<body>
+    <button id="btn">Submit</button>
+    <script>
+    let PrimeNotprime=(x)=>{
+        for(let i=2; i<x; i++){
+            if(x%i==0){
+                return 0;
+            }
+        }
+        return 1;
+    };
+    document.getElementById("btn").onclick = function(){
+    let ans = PrimeNotprime(6);
+    if (ans==0){
+        console.log("not a prime number");
+
+    }
+    else{
+        console.log("prime number");
+    }
+   };
+    
+        
+   </script>  
+</body>
+</html>

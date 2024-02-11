@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function party(dishes,order){
+            //console.log("pizza aa raha hai...")
+            setTimeout(()=>{
+                console.log(dishes);
+                if (order){
+                    order()
+                }
+            },3000)
+        }
+        party("pizza",()=>{
+            console.log("burger aa raha hai.....");
+            party("burger",()=>{
+                console.log("patties aa raha hai....");
+                party("patties",()=>{
+                    console.log("cold drink aa rahi hai...");
+                    party("cold drink",()=>{
+
+                    })
+                })
+            })
+        })
+
+        //   call back ---- > call back hell ----> promises ------> promises chain ----> async await
+
+
+    </script>
+    
+</body>
+</html>
