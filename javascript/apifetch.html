@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //let a= fetch("https://dummyjson.com/products");
+    //a.then((response)=>{
+        //response.json().then((data)=>{
+           // data.products.map((i)=>{
+               // console.log(i.id,i.title,i.price)
+            //})
+        //})
+   // })
+   
+    async function Output(){
+        let data=await fetch("https://dummyjson.com/products");
+        let inner=await data.json()
+        console.log(data);
+        console.log(inner.products[0].images[0])
+    }
+    Output()
+</script>
+</body>
+</html>

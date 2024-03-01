@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    img{
+        width:300px;
+        height:300px;
+        
+
+    }
+    .box{
+        display: inline-block;
+        border: 2px solid black;
+        text-align: center;
+        margin-left: 20px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .search{
+        text-align: center;
+        justify-content: center;
+    }
+    .search input{
+        width:30%;
+        height:30px;
+        border-radius: 20px;
+        font-size: 20px;
+        color: #555;
+
+    }
+    .search button{
+        width: 100px;
+        height:40px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+<body>
+    <div class="search">
+    <input type="text" placeholder="Search image by name" id="searchimg">
+    <button>Search</button>
+    </div>
+    <script>
+        let data=fetch("https://dummyjson.com/recipes");
+            data.then((response)=>{
+                response.json().then((result)=>{
+                    for(let i of result.recipes){
+                        let d=document.createElement("div");
+                        //let s=document.createElement("input")
+                        let im=document.createElement("img");
+                        let p=document.createElement("p");
+                        let price=document.createElement("p");
+                        d.setAttribute("class","box");
+                       // s.setAttribute("class","search","type","text","placeholder","search image by name")
+                        p.innerText=i.name
+                        im.src=i.image
+                        price.innertext="price: " + i.caloriesPerServing
+                        d.appendChild(im);
+                        d.appendChild(p);
+                        d.appendChild(price);
+                        document.body.append(d);
+                        console.log(i);
+                    }
+                })
+            })
+
+    </script>
+</body>
+</html>
